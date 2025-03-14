@@ -1,0 +1,76 @@
+# Study Notes for 20- Solution- Random Delays
+
+## Transcript
+
+Now let's make this more interesting.
+I'm going to add a random delay to each website.
+I want each website to respond at a different time.
+With this, you can see that you're displaying this code as we get that.
+So, let's go to our long task class.
+I want to override the simulate method.
+And in the second version, I want to introduce the parameter called delay.
+Instead of three seconds, we're going to use this argument.
+Now we go to our flight service class.
+We're going to reuse our random object to pass a random delay to the simulate method.
+So, let's say we want each website to respond between 1 to 3 seconds.
+We have a baseline of 1 second, plus random.
+That next end to second.
+Now, let's run a program and see what happens.
+So, we're querying this concurrently and we're getting responses in different times.
+Beautiful. Now, the last part.
+We want to print a final message to say how long it took to query all these websites.
+That is pretty easy.
+So, we go to our demo class.
+After we get the code, we collect them in a list.
+Let's do the result over here.
+This is going to give us a list of future objects.
+Let me show you.
+So, list of completable future avoid.
+Now, we can use the all of method to wait for the completion of all these future objects.
+So, completable future that all of.
+Here, we have a more arcs parameter.
+Technically, this is a syntactic sugar over arrays.
+So, we can pass an array of completable future objects.
+That is pretty easy. We call futures.
+The two array.
+Now, this method is overloaded.
+The version without parameters returns an object array.
+Let me show you.
+I'm going to put this on a new line.
+Take a look.
+So, the version without a parameter returns an object array.
+We don't want this because the all of method expects an array of completable future objects.
+So, we should use the second version.
+And here, we should pass an array of completable futures.
+With this, we'll get a completable future array.
+So, over here, we pass new completable future of zero.
+To pass an empty array, and with this, we're telling this method that we want the result to be a completable future array.
+Okay?
+Now, we wait for all the result.
+Let me put this on a new line.
+Pay attention to how I'm formatting this code.
+So, we have completable future.
+We wait for all these futures to complete.
+Then, we're going to run this piece of code.
+This is where we're going to print our final message.
+First, we're going to calculate how long it took to execute this operation.
+So, just before we start, we're going to get the current time.
+We can use the local time class.
+This class has a static method called now.
+So, this returns the current time.
+Now, over here, we're going to repeat this.
+So, we calculate the end time local time. Now, then we create a duration object.
+So, this duration class has a static method called between.
+We can pass this start and end time and get a duration object.
+And finally, we print a message like retrieve all quotes in.
+Here, we call duration dot 2 millis.
+It's what we turn the duration in milliseconds.
+And finally, we add msec.
+Okay? Let's run the program and see the result.
+There you go. Beautiful.
+So, that brings us to the end of this course.
+I want to say thank you for allowing me to be your instructor.
+If you enjoy this course, please support me by telling others about my code.
+I really appreciate your support.
+Once again, thank you and I hope to see you again in my other courses.
+Thank you and have a fantastic day.
