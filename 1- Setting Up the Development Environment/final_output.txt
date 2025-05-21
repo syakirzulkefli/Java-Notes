@@ -1,0 +1,41 @@
+# Study Notes for 1- Setting Up the Development Environment
+
+## Transcript
+
+In this Java tutorial, we're going to download and install the necessary tools to build
+Java applications.
+So open up your browser and search for JDK download.
+JDK is short for Java development kit and it's basically a software development environment
+for building Java applications.
+It has a compiler, it has a bunch of code that we can reuse, it has a Java runtime environment
+and a bunch of other stuff.
+So over here, you can see this page on Oracle.com, Java SE, which is short for Java standard
+edition.
+Click on this.
+Now over here, click on this icon.
+Now on this page, you can see Java development kit for various platforms like Linux,
+macOS and Windows.
+Here I'm on a Mac, so I'm going to download this DMG file over here.
+Before we do this, first we need to accept the license agreement.
+All right, now, let's download the DMG.
+When we open this, we're going to see this package, let's double-click this.
+And here we see this installation wizard.
+It's super easy, just click continue and install.
+You have to enter your computer's password and then
+all right, done, beautiful.
+So we can move this to trash.
+Now, the next piece of software we need is a code editor.
+There are so many code editors for building Java applications.
+The popular ones are netbeans, eclipse, and intelligent.
+In this Java course, I'm going to use IntelliJ, but if you have a favorite editor,
+feel free to use that to take this course.
+That's perfect to find.
+So let's search for IntelliJ download.
+All right, you can see download IntelliJ idea, click on this link.
+Over here, download the community edition, which is absolutely free.
+And it's more than enough for this course.
+So download.
+All right, now let's drag and drop this onto the applications folder.
+Beautiful.
+All right, we installed all the necessary tools to build Java applications.
+So next, we're going to look at the anatomy of a Java program.
