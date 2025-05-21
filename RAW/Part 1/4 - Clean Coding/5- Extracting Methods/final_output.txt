@@ -1,0 +1,115 @@
+# Study Notes for 5- Extracting Methods
+
+## Transcript
+
+In this video, we're going to refactor our main method and extract a new method for calculating
+the mortgage.
+So after our main method, let's define a new method, public, static, now what should be the
+return type of this method?
+It should be a double.
+That is the data type we use for storing the mortgage.
+So return a double, let's call this method, calculate mortgage.
+That what parameters do we need here?
+We need principle, monthly interest or even better annual interest because we can calculate
+the monthly interest from the annual interest and finally we need the number of years.
+Once we have the number of years, we can calculate the number of payments.
+So let's add these parameters here.
+Print, principle, float, annual interest and finally bite years.
+Now this line is a little bit too long and we cannot see all the parameters.
+So to clean this code, we can break it down into multiple lines like this.
+Now we can see all parameters.
+All right, let's add a code block.
+Now we need to move this logic for calculating the mortgage from the main method into
+this new method.
+So I'm going to select this few lines.
+Now if you're on Mac, press, command and X, if you're on Windows, press, control and
+X, we cut these lines and paste them over here.
+Now we have a few compilation issues.
+We don't have the monthly interest and the number of payments.
+So we need to bring these variables from our main method.
+Let's scroll up.
+All right, this is where we calculate the number of payments.
+So the moment we ask the number of years, we calculate the number of payments.
+Let's cut this line.
+Now because we have a single line here, we don't really need these braces, so let's clean
+this code.
+If I'm more, that's better.
+So we move this line into our new method, float number of payments.
+Now here we need this constant that we define in our main method.
+So let's go bring this constant into this method as well.
+We go to the very top.
+Here we have two constant.
+Both these constants are used in the calculation of the mortgage.
+So we don't really need them here.
+We can reduce the weight of our main method by moving these two lines into our new
+method.
+So let's go back.
+That's better.
+Now what else do we need here?
+We need to bring this variable from our main method.
+So once again, let's go back to the top, there you go.
+So where we ask the annual interest, this is where we calculate the monthly interest.
+Let's cut this line.
+And now again, we have a single statement, so we don't need these braces.
+They're getting in the way, making our code ugly and smelly.
+That's better.
+Now back to our new method.
+So let's declare this float monthly interest.
+So we have two constants.
+We calculate two variables based on these parameters that we get here.
+Next we calculate the mortgage.
+I find anybody to return it.
+So return mortgage.
+That is better.
+That take a look.
+All the logic for calculating the mortgage is in one place.
+Previously, it was spread all over the place in our main method and we couldn't reuse
+this logic.
+If tomorrow we write another program and we want to calculate the mortgage in that program,
+we have to go and cherry pick those lines from the main method and copy paste them into
+our new program.
+Now all this logic, all this code for calculating the mortgages in one place.
+That is beautiful.
+All right, now we need to call this method in our main method.
+So here we call the calculate mortgage method.
+We give it the principle, the annual interest.
+We don't have that.
+We're going to fix that in a second, so annual interest and years.
+Why do we have a compilation error here?
+Because both these variables are declared in our Y loop, so they are not available in
+this code.
+Let me show you.
+So there you go.
+Where we ask the number of years, this is where we have declared the years variable.
+So we need to move this declaration to the top so we can access this variable throughout
+this method.
+I'm going to delete this from here.
+Similarly, we have declared annual interest here in this Y loop.
+Let's move the declaration to the top.
+So after principle, we declare a float called annual interest.
+We can initialize it to zero and also a byte called years.
+We initialize this to zero as well.
+Now we can see that these two variables are great out, which means there are no longer
+required.
+Because we move their declaration to our new method.
+So let's delete these two lines.
+That is better.
+Now if you look on the right side, you can see this red bar.
+We have a compilation error.
+Let's click this.
+All right, online 43, we're trying to format more gauge as a string.
+So I forgot to get the return value of this method and store it in the mortgage variable.
+So let's declare a double called mortgage and set it to the return value of this method.
+This was our first refactoring.
+Next we're going to refactor these repetitive patterns in the code.
+Hey, I just realized I made a mistake when refactoring this method.
+I declared the number of payments as a float.
+We don't need a float here, a better data type for the number of payments is short.
+Now here we get a compilation error because the result of this arithmetic expression by default
+is an integer.
+So we need to cast the result to a short.
+However, now short is only applied for the years.
+We want the result of this entire expression to be converted to short.
+So we need to wrap this in parentheses as well.
+Just to clarify, I caught my mistake later on.
+So in the following videos, you're still going to see the number of payments declared as a float.

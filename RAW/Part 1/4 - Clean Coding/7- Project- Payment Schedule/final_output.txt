@@ -1,0 +1,44 @@
+# Study Notes for 7- Project- Payment Schedule
+
+## Transcript
+
+All right, here's your project for this section.
+I want you to extend our mortgage calculator like this.
+So just like before, we enter three values.
+Let's say 180,000 for the principle, 4% for the annual rate,
+over 10 years.
+Now see what we get.
+So I'm adding the section, mortgage, and only in this section,
+we have monthly payments, which is set to this amount.
+So this is just a slight change in how we're presenting this value.
+Now, below this we have a new section, payment schedule,
+and this shows the remaining balance after each payment.
+So if I contribute this amount every month,
+after the first payment or balance is going to be reduced
+to this amount, after the second payment
+or balance is going to be reduced to this amount and so on.
+So here we have 10 years, 12 months in each year.
+That means we're going to have 120 payments.
+So as we go down this list, we can see the balance is getting closer
+and closer to zero and finally it reaches zero.
+Now to calculate the remaining balance,
+you should use this formula.
+I found this on this website, mtgprofessor.com slash
+formulas.htm.
+So let's see what we have here.
+L represents the loan amount or principle.
+We need to multiply this by this expression.
+So here, first we calculate the monthly interest.
+So see represents the monthly interest.
+We get this value and raise it to the power of n.
+Where n is the number of payments?
+So if you have 10 years, we have 120 payments.
+Then we subtract this from this expression.
+Once again here, we add one to the monthly interest,
+but we raise it to the power of p, where p is the number of payments
+we have made.
+Finally, we need to divide this by this other expression.
+Once again, see is the monthly interest and n is the total number of payments.
+So spend 15 to 20 minutes on this exercise.
+Make sure to review your code, make sure your code is clean and maintainable.
+You'll see my solution next.

@@ -1,0 +1,124 @@
+# Study Notes for 6- Refactoring Repetitive Patterns
+
+## Transcript
+
+In this video, we're going to get rid of this repetitive patterns in the code.
+So, we're going to get rid of this Y loops.
+We're going to move them to a different method.
+Let's say, read number.
+And then we're going to reuse that method three times.
+Every time we're reading a different kind of value.
+Here's a tricky part.
+In each Y loop, we're reading a different type of value.
+So, here we're reading a float.
+And over here, we're reading a byte.
+What should we do with this?
+Well, one way is to implement that method three times.
+Let's say, read byte, read float, and read integer.
+But there's really no point doing that.
+There's no point moving this Y loop to a different method.
+And calling that method.
+Because with that, we're still going to end up with three methods that look almost identical,
+except on this line.
+So, we're not going to be able to reuse that method many times.
+Another approach is to implement this method once.
+Call it read number and return a double.
+Whenever we call that method, we can cast that double to a different type,
+like a float or an integer or a byte.
+So, let's copy one of these Y loops.
+Now, after our main method, we're going to create a new method,
+public, static, double, read number.
+Now, don't worry about the parameters.
+We're going to get back to this in a second.
+Let's add the code block and paste the code that we just copied.
+Now, let's work on the parameters.
+What parameters do we need here?
+The first parameter is the question or the prompt.
+So, instead of hard coding this value here,
+you want to add a parameter here, let's say string prompt,
+and simply print that prompt over here.
+Now, we need a scanner object.
+So, let's create that here, scanner.
+We set that to a new scanner using system.in.
+Now, instead of working with annual interest,
+we want to work with a generic variable.
+Because inside this method,
+we don't know anything about mortgage calculation.
+We don't know about the years or annual interest.
+All we care about is reading a number, reading a value.
+So, I'm going to declare a variable here called value.
+Now, we need to rename this three references to value.
+So, here we press Shift and F6 to rename this.
+And you can see that IntelliJ automatically suggested
+to replace this with value.
+So, let's go with that.
+Now, all these three references are updated automatically.
+We should also get rid of these hard coding values,
+like 1 and 30, because these depend on the question we're going to ask.
+So, we can pass these as parameters.
+Let's say double min and double max.
+Now, we can replace this values very easily.
+Finally, we need to replace this error message.
+So, we can generate a dynamic error message using this min and max values.
+So, enter a value between here we end our string,
+then we can concatenate it with min.
+Once again, we can concatenate it with another string,
+here we type and, and then after that, we add the max.
+Now, we have a generic error message based on the min and max values.
+Now, finally, we need to return this value variable.
+So, now we have all the logic for reading a value from the terminal
+and validating it in a single place inside of this method.
+So, we can reuse this in multiple places in our main method.
+Let me show you.
+So, here's our first y loop.
+We can completely get rid of this by calling the read number method.
+So, we call read number.
+What is our prompt?
+It's principal.
+Next we need to pass the min and max value.
+So, min is 1000 and max is 1 million.
+Now, this returns a double.
+So, we cast it to an integer and then store the result in principal.
+Now, we no longer need these few lines.
+As simple as that.
+You need to apply the same change to these other loops.
+So, once again, let's call read number.
+What is the second prompt?
+Annual interest rate.
+Now, here we are adding a colon followed by a space.
+You could also add this logic inside the read number method.
+So, we don't have to repeat this every time.
+A tiny issue, I'm not worried about it too much.
+What are the min and max values?
+One and 30.
+Now, this method returns a double.
+So, we cast it to a float and store the result in annual interest.
+Now, let's get rid of the y loop.
+Beautiful and finally we need to read the years.
+So, once again, read number.
+Period in years.
+And here we need to pass one and 30.
+This returns a double.
+We cast it to a byte and store it in years.
+So, let's get rid of this loop as well.
+Beautiful.
+Now, look at the code and the main method.
+As you can see, the scanner variable is no longer used because it's great out.
+We move this in our read number method.
+So, we can delete this line as well.
+Now, how many lines of code do we have here?
+This method starts on line 8 and ends on line 21.
+So, we have 13 lines of code.
+Previously, we had 44 lines of code.
+Our main method was so bulky.
+It was hard to read, hard to understand, hard to change.
+The logic for calculating the mortgage was all over the place.
+It was very smelly.
+Now, look at what we have here.
+On the top, we declare these variables.
+Then we set them, which makes me think we don't need to separate the declaration and assignment.
+We can declare these variables right here.
+So, in float and byte.
+So, we can get rid of these declarations.
+Now, we have only eight lines of code in this method.
+This is what we call clean and beautiful code.

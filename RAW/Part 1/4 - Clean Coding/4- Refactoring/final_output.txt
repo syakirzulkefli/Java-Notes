@@ -1,0 +1,48 @@
+# Study Notes for 4- Refactoring
+
+## Transcript
+
+So you'll learn how to create new methods.
+Now we're going to talk about refactoring.
+Refactoring means changing the structure of our code without changing its behavior.
+So here we're looking at the code for our mortgage calculator.
+This is what we wrote at the end of the last section.
+Now look at the code in our main method.
+Our main method starts on line 8 and ends on line 52.
+So it has 44 lines of code.
+That's way too much.
+Ideally, our methods should be between 5 to 10 lines of code.
+And no more than 20.
+So we need to chop up this method.
+We need to refactore it.
+Which means we're going to extract certain pieces from this method and put them in other methods.
+Now, whenever you want to refactor your method, you should look for two things.
+One is the concepts or the lines of code that always go together.
+For example, here on line 46 we're calculating the mortgage.
+What do we need to know to calculate the mortgage?
+We need to know the principle, the monthly interest and the number of payments.
+Now, monthly interest can be calculated from the annual interest.
+And we calculated that over here.
+So these lines, even though there are currently very far apart,
+conceptually there are very relevant or very close to each other.
+The same is true for the number of payments,
+we're calculating this based on the number of years.
+So this logic for calculating the mortgage is currently spread
+all over the place in our main method.
+You want to bring these lines together and put them in a separate method for calculating the mortgage.
+Now, in the future, if you write another program and in that program,
+we need to calculate the mortgage, we can simply reuse that method.
+Okay?
+Another thing you need to look for is repetitive patterns in your code.
+So what is repetitive in this code?
+Can you tell?
+All these y loops.
+How we ask a question is very repetitive.
+We have an infinite loop, then we ask the question.
+Next, we read some value.
+We perform some data validation and if the value is invalid,
+we print an error message.
+We have the exact same pattern for other questions.
+What is different is the label for the question and the range of values as well as the error message.
+So these are the opportunities that we can refactor.
+I'm going to show you how to do this over the next few videos.

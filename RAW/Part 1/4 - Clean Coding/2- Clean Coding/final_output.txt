@@ -1,0 +1,25 @@
+# Study Notes for 2- Clean Coding
+
+## Transcript
+
+As we write code, it's very important to keep our code clean and organized, just like our
+houses.
+If your house is messy and full of stuff all over the place, you're going to have a difficult
+time finding something you're looking for.
+In contrast, if your house is clean and everything is in the right place, you can quickly
+find your stuff.
+We have the exact same concept in coding.
+As our program's grow larger, we have to break down our code into smaller chunks.
+These chunks are easier to read and understand.
+Also we can potentially reuse them in other programs.
+Programs written this way are more maintainable and easier to extend.
+Now, there's more to clean coding that I can cover in this section.
+I have a complete course on clean coding if you're interested.
+But in this section, I'm going to teach you the most important skills you need to know
+to write clean and maintainable code.
+We're going to do an open surgery on our mortgage calculator because this code is very dirty
+and smelly.
+We'll restructure this code step by step and turn it into beautiful code.
+You're going to see that soon.
+Before we get started, you need to learn how to create new methods and that's what we're
+going to look at next.
