@@ -1,0 +1,141 @@
+# Study Notes for 3- Your First Java Program
+
+## Transcript
+
+In this Java tutorial, you're going to learn how to write and execute your first Java
+program.
+So let's open IntelliJ Idea.
+Here on the home screen, let's create a new project.
+All right, on the left side, select Java and make sure project SDK is not black.
+So earlier we download the JDK or Java development kit version 12.
+That is why JDK version 12 is selected here.
+If you don't see that, make sure to select it from this dropdown list.
+All right, now let's click on Next.
+On this page, select Create Project from Template.
+So we're going to create a command line application, which is an application that we can
+run from the command line.
+It doesn't have a graphical user interface or a GUI.
+Now, I know a command line application is not as exciting as an application with a graphical
+user interface like a mobile app or a desktop app, but trust me, building an application
+with a graphical user interface is very complicated.
+So for now, we're just going to build command line applications to learn Java properly.
+Once you learn Java properly, then you can learn about building desktop or mobile applications
+with Java.
+All right, now let's click on Next.
+On this page, we have to give our project a name.
+Let's call it Hello World.
+Now over here, you can see the location of this project.
+So it's inside the Idea Projects folder.
+Right below that, you can see the base package, which is said to come that code with
+mosh on my machine.
+On your mission is probably going to become dot package.
+What is this?
+Well, here we talked about classes and methods.
+I told you that a class is a container for related methods.
+So we use classes to organize our code.
+By the same token, we have a concept called package and we use a package to group related
+classes.
+So as our applications grow, we're going to end up with hundreds or even thousands of
+classes.
+So we should properly organize these classes into packages.
+Now, by convention, the base package for Java project is the domain name of your company
+in reverse.
+So my website is code with mosh.com.
+That is why I'm going to set the base package for this project to come dot code with mosh.
+Now it doesn't mean that you should have an actual domain registered on an internet.
+This is just a way to create a name space for classes.
+So now every class that we create in this project will belong to this package.
+We're going to talk about packages in more detail in the future.
+So for now, just type a base package for your project.
+It can become dot your name or whatever.
+It doesn't really matter.
+All right, now let's go forward.
+All right, here is our first Java project.
+Now this code editor might look a little bit intimidating at first, but trust me, it's
+really easy.
+And you're going to learn about it throughout this course.
+On the left side, we have the project panel where we can see all the folders and files
+in our project.
+For example, on the top, we have the hello word project inside this project.
+We have the source folder where we have the source code of a project.
+Now in this folder, we have another folder that is com dot code with mosh.
+That is the name of our base package.
+And in this package, we have this class, main.
+So you can see this main file opened on the right side here.
+Now look at the name of this file.
+It's main, the Java.
+So all Java files should have the Java extension.
+OK?
+Now let's collapse the project panel by clicking on this icon.
+That is better.
+So see what we have here.
+On top of this file, we have the package statement.
+And this is used to specify what package this class belongs to.
+So the main class that we have here belongs to this package.
+Now this package statement is terminated by semicolon.
+So in Java, wherever we have a statement, we should terminate that statement with
+a semicolon.
+This is exactly like C sharp or C++.
+Now below this package statement, we have our main class, exactly like what you saw in
+the previous tutorial.
+So we have public class, main with a pair of curly braces.
+Inside this class, we have our main method.
+So it's a public method, which means it's accessible from other parts of this program.
+It's static.
+We haven't talked about static methods yet.
+We'll talk about them in the future.
+For now, just remember that the main method in your program should always be static.
+The return top of this method is void, which means this method is not going to return
+of value.
+And here in parentheses, we have one parameter for this function.
+We can use this parameters to pass values to our program.
+Again, we'll look at this in the future.
+Now right after this parentheses, we can see the left brace.
+And this is where we write the code in this method.
+Now, by default, we have this line prefix with two slashes.
+This indicates a comment.
+We use this comments to explain our code to other people.
+So these comments don't get executed.
+Now let's remove this comment and write a bit of code to print something on the terminal.
+So here we're going to use the system class in Java.
+So capital S system.
+Here in this tooltip, you can see the system class is defined in this package, Java,
+the Dlang, or language.
+Also look at this icon on the left side.
+This indicates a class.
+Now inside this class, we have various members.
+We can use the dot operator to see the members defined in the system class.
+Now, the member that we're going to access is out.
+Look at the icon of this member.
+It's f, which is short for field.
+We're going to talk about fields in the future when we talk about classes and object-oriented
+programming.
+Now, what is interesting here is the type of this field.
+And you can see that on the right side.
+That is print stream.
+So print stream is another class that is defined in Java.
+So once again, we use the dot operator to look at the methods or members defined in the
+print stream class.
+The method we're going to use is print ln, which is short for line.
+Look at the icon for this method.
+So I'm indicates a method.
+Now, your press enter and intelligent automatically adds these parenthesis as well as a semicolon.
+So now with the code online six, we're calling or executing the print line method.
+Earlier, I told you that inside this parenthesis, we can pass values to our methods.
+Here we want to print the hello word message on the terminal.
+So let's type double quotes and inside this quotes right, hello word.
+The hello word is textual data.
+In Java, whenever we deal with textual data, we should always surround them with double
+quotes.
+Now we say we have a string.
+So a string is a sequence of characters.
+All right, so we're done with our first program.
+Now to execute this, we can click on this icon on the toolbar.
+Look at the shortcut on Mac, it's control and R.
+I always prefer to use shortcuts because they're faster.
+So control and R.
+Now, intelligent is building our application and we can see the result in this little
+terminal window.
+So here's our hello word message.
+So that was our first Java program.
+Next I'm going to explain how Java code gets executed under the hood.

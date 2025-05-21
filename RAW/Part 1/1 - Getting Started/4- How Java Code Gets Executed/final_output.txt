@@ -1,0 +1,51 @@
+# Study Notes for 4- How Java Code Gets Executed
+
+## Transcript
+
+All right, now let's see what exactly happens under the hood that moment we run a Java program
+in IntelliJ. They're basically two steps involved here, compilation and execution. In
+the compilation step, IntelliJ uses the Java compiler to compile our code into a different
+format called Java byte code. This Java compiler comes with the Java development kit
+that we downloaded at the beginning of the course. Let me show you. So here we can
+right click on this main, the Java and in this context menu, we have an item called
+Open in Terminal. It's down below. Unfortunately, it's not visible in my recording window.
+It's called Open in Terminal on Mac and probably open in command prompt on Windows.
+So let's open that. We get this terminal window or command prompt on Windows. Here we're
+currently inside of this folder, code with mush. That is where we have our main, the
+Java file. Now we can invoke the Java compiler like this, Java see and pass the name
+or Java file as an argument. So main, the Java. If you're on Mac or Linux, make sure
+to a spell list with a capital M because these operating systems are case sensitive.
+So enter. Now let's look at the content of this folder. On Mac or Linux, we can type
+LS on Windows with type DIR. So let's take a look in this folder. Now we have a new file
+main.class. This is the bytecode representation of this Java file. Now let me use IntelliJ to
+run our Java program. This class file gets stored somewhere else. Let me show you. So back
+to the project panel. Here in our project, we have this source folder where we have our source
+code. And we have this out folder where we have the result of the compilation. So inside
+this folder, we have production. Inside this, we have Hello World, the same name as our
+project. Inside Hello World, we have come, which is the name of our top level package.
+Inside this package, we have a sub package that is code with mush. And here we have our
+main.class file. So this was the compilation step. Now this Java bytecode that we have
+in this file is platform independent. And that means it can run on Windows, Mac, Linux, or
+any operating systems that has a Java runtime environment. If we go to Java.com slash download,
+we can download Java or more accurately Java runtime environment for various operating
+systems. This Java runtime environment has a software component called Java virtual machine
+or JVM. This JVM takes our Java bytecode and translates it to the native code for the
+underlying operating system. So if you're on a Windows machine, this Java virtual machine
+converts our Java bytecode into the native code that Windows can understand. This architecture
+is the reason why Java applications are portable or platform independent. We can write
+a Java program on a Windows machine and execute it on Linux, Mac, or any other operating
+systems that have a Java runtime environment. C sharp and Python also have the same architecture.
+That's why they're platform independent as well. Now let me show you how to invoke this Java
+virtual machine to run a Java program. So back to this terminal window, let me expand this.
+Currently we are inside of this folder code with mush and in this folder we have this class file.
+Now let's go one level up, so cd dot dot and one more time. So now we are inside the source folder.
+We can invoke Java virtual machine like this, the type Java and then we type the full pass
+to our main class file. What do you mean by that? Well, earlier we defined this package,
+com dot code with mush and this class, the main class is part of this package. So the full path
+to this class is com dot code with mush dot main. Make sure to use a capital M here because
+this is case sensitive. Now when we press enter, Java will look at this folder com
+inside this folder, it will look at this other folder called with mush and then it will find
+main dot class in that folder. It will load the byte code and convert it to the native code
+for the operating system we are using. So take a look, so it executed our program, hello world,
+beautiful. When we run a program using IntelliJ, all these steps are hidden from us.
+We don't see the compilation or execution steps.
