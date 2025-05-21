@@ -1,0 +1,106 @@
+# Study Notes for 15- Formatting Numbers
+
+## Transcript
+
+When we work with numbers, we need to format them as currency values.
+For example, we want to have a number like this.
+Imagine this is the price of a product.
+To display this to the user, we want to add a dollar sign here
+and separate every three digits with a comma.
+Or if we want to have a number like 0.1
+and we want to represent this as a percentage value.
+So instead of 0.1, we want to display 10%.
+So in this tutorial, I'm going to show you how to format numbers in Java.
+We have this class number format that is defined in Java, the text package.
+In this package, we have a lot of classes for handling text, dates, numbers and so on.
+So let's press enter here. It's important on the top, beautiful.
+Now, we want to declare a variable, so let's give this variable a name, currency.
+Now, we need to instantiate this, so new number format.
+However, we get a compilation error here. Let's take a look.
+Number format is abstract. It cannot be instantiated.
+So in Java, we have this concept of abstract classes, so some classes are abstract
+and they are basically like a half-baked cake.
+We cannot use the new operator to create an instance of them.
+We're going to talk about abstract classes and why they exist later in the course.
+For now, remember that we cannot create an instance of the number format class
+because it's abstract.
+So there is another way. Let me show you.
+This class has a bunch of methods that start with get.
+So we have get currency instance and when we call this method,
+this will create an instance of the number format class and return it.
+So instead of using the new operator, we're going to use this method here.
+This is what we call a factory method because it's like a factory.
+It creates new objects.
+Now, look at the return type of this method.
+It's a number format object.
+So we call this method.
+Now, we get the return value and store it in a variable of type number format called currency.
+Let me see how it is zoom out so you can see all the code.
+There you go.
+On the right side of the assignment operator, we're calling the get currency instance method.
+We get the result which is a number format object and store it in this variable.
+Now, I'm going to zoom in so you can see clearly.
+All right, that's better.
+Now, this object has a method for formatting values.
+Once again, you can see this method is overloaded.
+We have multiple implementations.
+We can give it a long or double or whatever.
+So I'm going to call this method and pass a value like 1, 2, 3, 4, 5, 6, 7, 0.891.
+So we have three digits after decimal and a few other digits here.
+Now, this method will return a string representation of this number format as a currency.
+So, let's get that and store it in a string variable like result.
+And then, we're going to print result on a terminal.
+See what we get.
+So, we get this dollar sign.
+Every three digits are separated using a comma and we only have two digits after decimal point.
+So this class is very handy in formatting numbers as currencies.
+We have another method for formatting a number as a percent.
+And that is get percent instance, right?
+Now, it returns an instance of the number format class specialized for formatting numbers as a percent.
+So we need to rename this variable from currency to percent.
+Now, we don't want to manually change this because there are multiple references to this variable.
+This other reference was not updated.
+So let me show you the proper way to rename objects in IntelliJ.
+If you right click here, you can see this refactor menu.
+And here we have rename.
+Now, look at this shortcut on the right side.
+Unfortunately, it's not visible in my recording window,
+but on Mac is Shift and F6.
+I always use shortcuts because they're faster.
+So, let's press Shift and F6.
+Now, we get this red box and below this, we can see a few suggestions for a better name.
+We can choose one of these or pick our own name.
+I'm going to change this to percent.
+And note that as I'm typing this, the other reference gets updated automatically.
+So this is very helpful.
+Now, let's press Enter.
+Okay, we're done with renaming.
+Now, let's pass a different value here.
+So let's say we have a number like 0.1.
+We want to format this as a percent.
+Let's run the program.
+There you go.
+We get 10%.
+Beautiful.
+Now, let me show you a cool technique.
+In this program, we don't really need this percent object,
+because we have used it in a single place.
+If would make sense to have this as a separate variable,
+if we have multiple references to it.
+So what can we do here?
+We can completely get rid of this object.
+So, let's delete this piece of code.
+We're basically calling this method of the number format class.
+As you know, this method returns a number format object.
+So right after calling this method and before the semicolon,
+we can use the does operator to access the methods or members
+of the number format object.
+So here we call the format method straight away and pass our value.
+This is what we call method chaining.
+We're chaining multiple methods together.
+So here's one method and here's another method.
+Now, this returns a string so we can store it in this result
+variable.
+Let me cut this expression from here and put it over here.
+Now, we have double semicolon so I'm going to delete one of them.
+Alright, beautiful.

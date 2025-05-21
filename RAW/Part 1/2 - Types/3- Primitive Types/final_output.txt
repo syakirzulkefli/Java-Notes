@@ -1,0 +1,89 @@
+# Study Notes for 3- Primitive Types
+
+## Transcript
+
+And this tutorial we're going to talk about various types in Java.
+Basically we have two categories of types.
+We have primitive types for storing simple values and non-primitive types or reference
+types for storing complex objects.
+So in the category of primitive types we have byte which takes one byte of memory and
+in one byte we can store values from 128 to 127.
+Now the more bytes we have, the larger numbers we can store.
+So next we have short which takes two bytes and with this we can store values up to 32,000.
+Next we have integer which we have seen before.
+Intergers take four bytes of memory and allow us to store values up to 2 billion.
+Then we have long which takes eight bytes and with this we can store even larger numbers.
+Now all these types are for storing whole numbers that don't have a decimal point.
+If you want to store a number that has a decimal point you have to use float or double.
+Float takes four bytes, double takes eight bytes.
+So obviously with double we can store larger numbers.
+Next we have chart for storing a single character like A, B, C and these chart types take
+two bytes so they support international letters.
+And finally we have Boolean for storing Boolean values which can be true or false just
+like yes or no in English.
+Now let's take a look at a few examples.
+Earlier we use an integer for storing someone's age but as you learned integers take
+four bytes and allow us to store values up to 2 billion.
+We don't need four bytes of memory to store someone's age.
+All we need is one byte because with one byte we can store values up to 127.
+So I'm going to change this to byte that is better.
+Now let's look at another example.
+Let's say we want to store the number of times a YouTube video has been watched.
+So we define an integer called views count.
+Note that I'm always using meaningful names for my variables because these names help
+us understand what this code does.
+I've seen some people use variable names like V or V1 or N.
+Nobody knows what these variables do.
+So as a best practice always use meaningful and descriptive names for your variables.
+So views count we set this to a large number like 123456 789.
+Now in Java whenever you deal with a large number like this you can use an underscore
+to separate every three digits.
+Just like how we use a comma in our documents to make our numbers more readable we can
+use an underscore in Java.
+So with integers we can store values up to 2 billion.
+But let's say the number of times this video has been watched is 3 billion.
+So I added three here.
+Now we have a red online that indicates an error.
+Let me hover our mouse over it.
+We see this tool tip integer number 2 large.
+So we need to change the type of this variable to long.
+However the error is still there.
+What's going on here?
+The reason we're getting this error is that by default Java sees these numbers as integers.
+So even though we have defined the type of this variable as long Java compiler sees this
+value as an integer and it thinks this value is 2 large for an integer.
+To solve this problem we need to add an L as a suffix to this number.
+We can use an uppercase or a lowercase L.
+But as you can see a lowercase L kind of looks like a one so it's better to use a capital
+L.
+So these are examples of whole numbers.
+Now let's declare a variable for storing a number with a decimal point.
+So double price we set this to 1099.
+Obviously the double variable is too large for storing the price of a product.
+So we can change this to float.
+That is better.
+But we have a compilation error here.
+Take a look.
+In compatible types required float but found double.
+The reason we're seeing this error is that by default Java sees these numbers with a
+decimal point as double.
+So even though we set the type of this variable to float Java sees this number as a double.
+So just like how we added a suffix to this number to represent it as a long.
+We need to add a suffix here to represent this number as a float and that suffix is F.
+Once again we can use an uppercase or lowercase F.
+So these are examples of numbers.
+Now let's store a character.
+So char.
+We call it letter and we set it to A.
+Note that we should always surround single characters with single quotes and multiple characters
+or strings with double quotes.
+So char represents only one character, string represents a series of characters.
+And finally let's see an example of a Boolean.
+So we define a Boolean variable called is eligible.
+Is this person eligible for loan or not?
+We set this to true or false.
+These are the Boolean values.
+Now note that all these words coded in our range are reserved keywords in Java.
+Just like public, static void, class, package, these are all reserved keywords.
+So we cannot use this reserved keywords.
+The name are variables, classes and methods.

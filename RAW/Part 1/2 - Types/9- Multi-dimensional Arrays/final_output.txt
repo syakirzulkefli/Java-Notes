@@ -1,0 +1,46 @@
+# Study Notes for 9- Multi-dimensional Arrays
+
+## Transcript
+
+So you have learned that we use arrays to store a list of objects.
+In Java, we can also create multi-dimensional arrays.
+For example, we can create a two-dimensional array to store a matrix.
+Or we can create a three-dimensional array to store data for a cube.
+These are useful in scientific computations.
+Let me show you.
+So here we have a single-dimensional array to convert this to a two-dimensional array.
+We need to add another pair of square brackets.
+Now we have a compilation error because we need to repeat these brackets on the other side.
+So let's say we want to create a two-by-three matrix.
+So two rows and three columns.
+We add another brackets here and change these lengths to two and three.
+So now we have two rows and three columns.
+Now to access individual items and this array,
+we need to supply two indexes.
+First, the index of the row.
+So we can go to the first row and then the first column and initialize that to one.
+Now let's print this.
+So, and so you see tab.
+Once again, we use our arrays class.2 string and pass this object.
+Take a look.
+Once again, we get this weird string because here we're dealing with a multi-dimensional array.
+To solve this problem, we need to use another method in this class called deep two string.
+We use this for printing multi-dimensional arrays.
+Take a look.
+Now we have this matrix which has two rows and in each row we have three columns.
+We can also create a three-dimensional array.
+All we have to do is to add another pair of brackets and specify the lengths of that dimension.
+Pretty easy.
+Now what about the curly breast syntax?
+Let me show you.
+So let's revert this back to a two-dimensional array.
+We're going to get rid of the new operator and use curly braces.
+Now let's say in this matrix, we're going to have two rows and three columns.
+So each row is an array itself because it's a list of items.
+So we add another array here.
+Let's say one, two, three.
+Then comma, now we add the second row which is another array.
+In this row we're going to have three numbers, four, five, and six.
+Now let's remove this line, we don't need it anymore.
+And print this array.
+So here's the end result.

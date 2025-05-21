@@ -1,0 +1,82 @@
+# Study Notes for 14- The Math Class
+
+## Transcript
+
+In this tutorial, we're going to look at the math class for performing mathematical operations.
+So in Java, we have this math class that is defined in Java, the blank package, so it's
+always there we don't need to explicitly import it, that this class has a number of useful
+methods.
+The first method I'm going to show you is the round method, and with this we can round
+a floating point number to a whole number.
+So as we can see, this method is overloaded, which means it's implemented twice, and
+the first implementation it takes a float and returns an int, and the second implementation
+it takes a double and returns a long.
+So let's pass 1.1 as a float to this method and store the result in an integer like this.
+Now we print the result and we get one beautiful.
+Another useful method is seal or sealing, which returns the smallest integer that is greater
+than or equal to this number.
+So the sealing of 1.1 is 2.
+Now here we have a compilation error, because this method returns a double, but we're storing
+the result in an integer.
+So here we need to explicitly cast this to an integer, and now we can see the sealing of
+this number is 2.
+We have another useful method that is floor.
+So the floor of a number is the largest integer that is smaller or equal to this number.
+In this case, it's going to be 1.
+Let's take a look.
+There you go.
+Another useful method is max, which returns the greater of two values, and once again
+this method is overloaded.
+So in the first implementation we get two integers, we have other implementations for
+longs, floats, and doubles.
+So let's pass two integers here, 1 and 2.
+This will return the greater number, which is 2.
+There you go.
+Similar to this we have min, that's pretty straightforward.
+Another useful method is random, for generating a random value between 0 and 1.
+Once again we get a compilation error, because this method returns a double.
+So let's change that to double.
+Every time we run this program, we get a different number.
+And this number is a floating point number between 0 to 1.
+Now, what if we want a number between 0 to let's say 100 instead of 0 to 1?
+Well, we simply multiply this by 100.
+Take a look.
+So every time we run this we get a different number between 0 to 100.
+Now if we don't want these digits after the decimal point, we can either round this number
+or cast it to an integer.
+Let me show you.
+So we can call math, the round, and pass the result of this expression.
+So I'm going to cut this at parentheses to call the round method and then paste that expression.
+Now let's run this code.
+So every time we get a double, we still have the fraction here.
+So we can change the type to an int.
+Now we have a compilation error, because the round method returns
+along, but here we have declared an integer.
+This is one of those cases where implicit casting cannot happen,
+because we have a value that is represented in eight bytes of memory.
+And we want to store that in a variable that has only four bytes of memory.
+So implicit casting doesn't work, but we can use explicit casting,
+because we know the result of this expression is a number between 0 to 100.
+So we can definitely store it in an integer.
+So let's add int here.
+And now let's run this again.
+There you go.
+Now what if we don't use the round method here?
+Let's see what happens.
+So I'm going to remove the call to the round method.
+And simply apply this casting over here.
+Let's see what we get.
+Now every time we run this program, we get 0.
+Do you know why?
+Because here we're applying this casting to the result of this method call,
+not this entire expression.
+As you saw earlier, every time we call the random method,
+it generates a number between 0 to 1.
+So when we cast that number to an integer,
+we'll lose the fraction.
+We always get 0 and 0 times 100 is 0.
+To solve this problem, we need to wrap this entire expression
+in parentheses.
+So we add parentheses around this.
+And now, remember around this, we get an integer
+between 0 and 100.

@@ -1,0 +1,75 @@
+# Study Notes for 18- Solution
+
+## Transcript
+
+All right, let's see what I've done here, and by the way, don't worry if your code is different
+from mine, we all think and code differently, so it's perfect to find if your code is different.
+Just look at my code, see what I've done here, and see if there are ways you can improve
+your code.
+That's what matters, okay?
+So here in our main method, first I've declared two final variables or constants.
+The first one is months in year, which I've set to 12, and the second one is percent,
+which I've set to 100.
+The reason I declared this constants is that I didn't want to have magic numbers in this
+code.
+So over here, where we calculate the monthly interest, we get the annual interest and divided
+by percent, and then months in year.
+This code is a very self-explanatory.
+Someone else's reading this code will have no problem understanding what's going on
+here.
+In contrast, if you had a magic number here, like divided by 12 and then 4 whatever.
+Someone else's reading this code would wonder, what is this for doing here?
+What is 12?
+Right?
+It's quite obvious to you that 12 is the number of months in a year, but trust me, sometimes
+other people cannot see this straight away.
+So as a best practice, avoid magic numbers in your code, always use constants or final
+variables to describe them.
+So let's revert this back.
+All right.
+So after declaring this constants, I've created this scanner object.
+Here we have the first question, principle, and we read the answer as an integer.
+I thought integer is a good data type for storing the principle, because short is not
+enough with short, we can store a maximum of $32,000.
+That's not enough.
+But if someone wants to find us one million dollars, so int is good, and it allows us to
+store and value up to two billion.
+Next we ask the second question, annual interest rate, we read this as a float.
+Here I could use double, but the interest rate is a small number, so float is sufficient
+for that.
+We don't really need double.
+So we get the annual interest, and then based on that, we calculate the monthly interest.
+Also to see how I have name my variables, all variables have a proper meaningful names.
+There are no magic words here, like MI as in short for monthly interest or M1 or M2, do
+not use magic names for your variables, always use meaningful and descriptive names.
+All right, next we get the period, we read this as a bite, because the maximum number
+we want to support is 30.
+So one bite is sufficient to store the number 30 or anything smaller.
+Now based on the number of years we calculate the number of payments, note the camel notation
+here, I've capitalized the first letter of every word, except the first word.
+So we get the years I multiplied by M1 senior, again the code is very self-explanatory.
+Once we collect all this data, then we calculate the mortgage.
+So we get the principal, multiplied by this expression, and then divided by this other
+expression.
+Let's have a quick look here.
+Now this looks a little bit complicated, so if you want to download my source code,
+look below this video, I'm attached it for you to download.
+And finally after we calculate the mortgage, we use the number format class to format this
+value as a currency.
+So we get the result, store it in the string, mortgage format and print it over here.
+Now here we could also avoid declaring this variable and simply add this expression over
+here, but it decided to do this to increase the readability of this code.
+Otherwise this line would be so long, but that's just my personal preference, you don't
+have to follow this.
+Alright, so this was my implementation of the mortgage calculator.
+However, this program has a number of problems.
+The first problem is input validation.
+So if you run this and enter a non numeric value, like XYZ, our program crashes, or as
+another example, if you enter a negative value here, our program is not going to behave
+properly.
+So that's where conditional statements come to the rescue.
+In the next section, we're going to talk about conditional statements.
+You will learn how to use these statements to validate the values entered by the user.
+So that brings us to the end of this section.
+I hope you learned a lot.
+Thank you for watching.

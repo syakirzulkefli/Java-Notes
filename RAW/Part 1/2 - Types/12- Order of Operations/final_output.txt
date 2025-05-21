@@ -1,0 +1,30 @@
+# Study Notes for 12- Order of Operations
+
+## Transcript
+
+Alright, now I've got a question for you.
+Here we have declared this variable X equals to 10 plus 3 times 2.
+What do you think is the result of this expression?
+The result is 16.
+Let's run this program and find out.
+So run, there you go.
+We got 16.
+But why?
+Well, this is a very basic math concept that unfortunately a lot of people don't know.
+In math, the multiplication and division operators have a higher priority so they get
+applied first.
+In this example, this expression 3 times 2 is evaluated first.
+The result is 6 and then 6 is added to 10.
+That's why we get 16.
+Now if you want to change the order of these operators, you can always use parenthesis.
+For example, if you want this expression to be evaluated first, we rapid in parenthesis.
+So like this.
+Now, Java compiler will first evaluate this expression.
+The result will be 13 and then 13 is multiplied by 2.
+So we get 26.
+Take a look.
+There you go.
+So be aware of the order of these operations.
+Parenthesis always have the highest priority.
+Then we have multiplication and division.
+And finally we have addition and subtraction.

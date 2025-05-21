@@ -1,0 +1,34 @@
+# Study Notes for 10- Constants
+
+## Transcript
+
+You'll learn a lot about variables.
+You'll learn that when declaring them, we need to initialize them, and we can always change
+their value later on throughout the lifetime of our programs.
+However, there are times that we don't want the value of a variable to change.
+For example, let's declare a variable called Pi and set it to 3.14.
+Now, here we need to add an f to represent this as a float, because by default, Java
+compiler sees this number as a decimal.
+Now, you know that we use Pi to calculate the area of a circle.
+What if before we calculate the area of a circle, I come here and type Pi equals 1.
+Then all our calculations are going to get messed up.
+We don't want this to happen.
+That's when we use constants.
+So if we type final here, Java compiler will treat this as a constant.
+So once we initialize this, we cannot change its value later on.
+You can see here, we have a compilation error, and it says, cannot assign a value to
+final variable Pi.
+So Pi is a final variable or a constant.
+Now by convention, we use all capital letters to name constants.
+So this should be Pi.
+Beautiful.
+Now, I tell you a little side story.
+In one of my early courses that I created years ago, that was C sharp basics for beginners.
+There I use the same example to teach the concept of constants.
+But I pronounce this word as P instead of Pi.
+And believe it or not, to this day, people make fun of me for saying P instead of Pi.
+But the time we learn this back in Iran, we pronounce it as P.
+And I think Greek people also say P.
+But anyway, I just thought to share this video to change the mood.
+Now, you're done with constants.
+Next, we're going to talk about arithmetic expressions.
