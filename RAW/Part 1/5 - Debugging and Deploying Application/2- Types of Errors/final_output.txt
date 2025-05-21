@@ -1,0 +1,29 @@
+# Study Notes for 2- Types of Errors
+
+## Transcript
+
+As we build Java applications, we encounter two types of errors.
+Compile time or scene tax errors that prevent us from compiling our application, these errors
+happen when we don't follow the grammar or scene tax of Java language.
+That's why we call them scene tax errors.
+The other errors don't happen at compile time.
+They happen at runtime.
+When we run our applications.
+So we call them runtime errors.
+These compile time errors are easy to find and fix.
+Most of the time, our code editors like IntelliJ tell us about the error.
+You have seen many of these errors throughout this course.
+But when you encounter an error that doesn't really make sense, your best source is Google
+and StackOverflow.com, which is a question on an answer side for professional and enthusiast
+programmers.
+If you've seen this search for the error message you get, I can guarantee that 99% of the time
+you can find a page on StackOverflow.com because it's very likely that other people have
+seen the same error.
+Now what about runtime errors?
+These errors are a bit more tricky.
+To find them, we need to use a tool called Debugger.
+So we're going to run our application using this Debugger and with this, we'll execute our
+code line by line and look at the value of various variables.
+And this will help us identify the source of the problem.
+In this section, I'm going to show you how to debug our applications in IntelliJ.
+But first, let's look at the common compile time errors in Java.

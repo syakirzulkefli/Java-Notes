@@ -1,0 +1,170 @@
+# Study Notes for 4- Debugging Java Applications
+
+## Transcript
+
+In this tutorial, I'm going to show you how to debug Java applications.
+Debug and means finding and removing errors in a program.
+Here we have this simple Java program.
+In our main method, we print the start message on the terminal.
+Then we call the print numbers method that have defined down here.
+This method should print numbers 0, 1, 2, 3 and 4.
+And finally we print the finished message on the terminal.
+Now, let me run this program.
+We only see these two numbers.
+These aren't even numbers.
+Our program has a bug.
+We want to find and fix this bug.
+Let me show you.
+So, we start by inserting a break point on a statement.
+So here on the first line of our main method,
+we can click on this gray area to insert a break point.
+We also have a shortcut for this.
+So if you look at the run menu on the top,
+down below you should see an item called toggle line break point.
+Unfortunately, it's not visible in my recording window.
+But the shortcut on Mac is command and F8.
+So this shortcut is very useful in inserting or removing break points.
+See?
+Or we can simply click here to remove this break point or add it again.
+Now we run our program using the debugger.
+And the execution will stop right here before this statement.
+So this is the benefit of using break points.
+In a large program, we can put a break point somewhere in the middle of the program,
+where we are suspicious that we have a bug.
+So Java will execute all statements up to that point.
+Now, to run our application using the debugger,
+we go to the run menu.
+Okay, this item debug main.
+The shortcut on Mac is control and D.
+So let's press control and D.
+Okay, our program started.
+You can see this line is highlighted, which means it's not executed yet.
+Now over here we see a new panel, which looks a little bit scary at the beginning,
+but trust me, it's super easy.
+On the top we have this toolbar.
+And here we can execute the code line by line.
+So the first item here is step over.
+You can see the shortcut is F8.
+And with this, we can execute the current line.
+So let's execute that beautiful.
+Now we are on line 6.
+If you look at the console or terminal window,
+you can see the start message was printed here.
+All right.
+Now we are on this line.
+Once again, we can step over this line.
+And if we look at the console, we can see these two numbers.
+So this is where we are having a problem.
+Instead of seeing the numbers 0, 1, 2, 3, 4,
+we only see 0 and 2.
+So we need to investigate the code inside this method.
+But now we are on this line.
+So I'm going to rerun our program.
+And next time, we want to step into this method and see what's going on there.
+So using this icon, we can rerun our program.
+As you can see, the shortcut is command and R on mac.
+All right.
+Here we are.
+Let's step over this line.
+Now we are on line 6.
+This time we're going to step into this method and see exactly what is happening there.
+So here we have another icon.
+Step into and the shortcut is f7.
+All right.
+Here we are.
+We have a four loop.
+i is set to zero.
+As long as i is less than limit.
+We're incrementing i by two.
+So this is the reason we have this bug.
+Instead of displaying all the sequential numbers.
+We're displaying only the even numbers.
+But before we fix this, let's look at other tools we have here.
+We have this variables window, which automatically detects variables that are currently in the scope.
+And shows their value.
+So here we have limit set to four.
+As you can see, limit is the parameter of this function.
+And four is the value that we passed here.
+So this variable window is really helpful.
+It allows us to look at the value of various variables and see why something is not working.
+Now currently we have an executed this line.
+That's why we don't see i in this window.
+Let's step over this line.
+Now you can see i is set to zero.
+So we are in the first iteration of this loop.
+Let's execute this line as well.
+Back to the console window.
+So we saw zero.
+Now let's step over this line one more time.
+We are on line 12 and on the right side you can see the current value of i.
+So these are some additional hints that intelligent adds to our code.
+It makes it really easy to debug our applications.
+Back to the debugger panel.
+Most of the time you see the variables that are important here.
+But if there is something that is not detected, you can always add a watch.
+With a watch you can watch a variable.
+So here we can click on this icon.
+New watch.
+And we can type the name over variable like i.
+So as you can see i is set to two.
+Now as your debugger applications and add more watches.
+This window might get a little bit too busy.
+So you can remove the watches that you don't need anymore.
+Now we identified the source of the problem.
+It's this statement over here.
+Instead of incrementing i by two we want to increment it by one.
+So let's change this to i plus plus.
+Now to see the changes we need to rerun our program we need to restart it.
+So let's click on this icon.
+Once again we are at the beginning of the main method.
+As you work on larger programs you don't want to start from the main method.
+You want to start from where there is a problem.
+So I'm going to remove this break point from here and add another break point to this method.
+Now using this play icon we can continue executing up to the next break point,
+which is what we just placed in this method.
+There you go.
+So next time we restart our program the execution starts here.
+This is much faster than manually executing all statements after this point.
+So once again let's step over this line and then print i on the terminal.
+One more time.
+Now i is one.
+Let's keep going.
+Now i is two beautiful.
+It's working properly.
+Now let's say we are done with this and we don't want to keep executing these two lines.
+Because we are in a loop and this is repetitive and time consuming.
+So if you are done with a method we can always step out.
+And here is the icon for stepping out of a method.
+The shortcut is shift and effect.
+So let's click this.
+Now we are back to the main method.
+So we can go back to the console window.
+We see all the numbers 0 1 2 3.
+4 is not printed here because we still have a bug in this method.
+Here we should use the less than or equal to operator.
+So this is how we debug Java applications using intelligent.
+If you use a different code editor the process is exactly the same.
+It's just a shortcut that are different.
+Pretty much every code editor these days has these tools built into it.
+So you can step over a method that can step into it and you can step out and so on.
+When you're done debugging you can click on this stop icon to terminate this session.
+Now one last thing before we finish this tutorial.
+Let's start another debugging session.
+So here we are inside the print numbers method.
+We have this window here frames and this shows all the methods that are called in the reverse order.
+So let me expand this a little bit.
+Our program started here in the main method.
+And online six which you can see highlighted over here.
+We called the print numbers method.
+So the control move to the print numbers method.
+Now if this method also called another method that method would be listed here.
+So in this window we can see all the methods that are called in the reverse order.
+This is also called the call stack because all the methods that are called are stacked on top of each other.
+This is really useful in debugging large applications.
+You can put a break point somewhere in the middle of the code.
+And look at the frames window to see how you got there.
+You can see all the methods that are called to get to that point.
+Very, very useful.
+So this is all about debugging Java applications.
+It's a very important skill that every developer must master.
+I hope you learned a lot and thank you for watching.

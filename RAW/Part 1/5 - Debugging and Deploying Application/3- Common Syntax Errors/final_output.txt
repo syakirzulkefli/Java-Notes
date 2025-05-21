@@ -1,0 +1,55 @@
+# Study Notes for 3- Common Syntax Errors
+
+## Transcript
+
+In this video, I'm going to show you some of the most common compile-time errors that I see
+amongst junior developers.
+If you have some programming experience, feel free to skip this video.
+So what are these common errors?
+The first one is when you declare it variable, but you forget to specify its type.
+Something like this.
+So what is name here?
+It's a string and we need to specify that here.
+In some languages like Python, we don't have to specify the data type.
+So that's the reason a lot of people knew to Java forget to specify the data type of
+their variables.
+Now let's revert this back.
+Another error is when you forget to add a semicolon at the end of the statement.
+Look, here we have a red underline.
+I just wanted you to tell us that a semicolon is expected.
+So in Java, you should always determine that your statements with a semicolon.
+On this, you're defining a code block.
+So here we have a code block, here we have another code block.
+We don't need to terminate these blocks with a semicolon.
+Now another common error is when you call a method, but forget to add parenthesis.
+Let's take a moment of print something on the terminal.
+So we call the print line method, but we forget to add parenthesis.
+So here we have the compilation error.
+Can not resolve symbol print line.
+So here we need to add parenthesis because this is a method.
+Another common issue is when you want to print a string, but you forget to add codes.
+So here we need to add double codes, and we cannot use single codes for strings.
+Single codes only represent single characters.
+So here we need double codes.
+Another common issue is when you misspell or incorrectly capitalize a variable.
+For example, here we have this name variable.
+If you misspell it and forget the E or incorrectly capitalize it, we're going to get a compilation
+error.
+Because as you know, Java is a case sensitive language, so it's sensitive to lower case
+and our case letters.
+So always make sure to spell and capitalize your variables and other identifiers properly.
+Now let's fix this, here's another common issue.
+Let's say we declare a variable called class.
+class is a reserved keyword in Java, so we cannot use it as an identifier for a variable
+or a class or a method name.
+And finally another issue that I see quite often amongst beginners is when they use a single
+equal sign to compare values.
+For example, let's say we have an integer set to zero.
+Now I want to compare this with two.
+So here we're using two equal signs, but a lot of beginners use a single equal sign for
+comparison and this results in a compilation error take a look.
+Java is expecting a Boolean expression that produces a Boolean value, but we have an assignment
+statement.
+So we're assigning two to this variable.
+So these are the common issues that I personally have observed a lot amongst beginners.
+Next we're going to look at debugging Java applications.
