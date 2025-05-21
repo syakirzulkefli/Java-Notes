@@ -1,0 +1,79 @@
+# Study Notes for 7- Switch Statements
+
+## Transcript
+
+In this tutorial, we're going to look at switch statements in Java.
+We use switch statements to execute different parts of code depending on the value of an expression.
+Kind of similar to if statements, let me show you.
+So let's say we're going to write a program and check the role of the current user.
+And then we're going to print different messages or give them different features depending on the role.
+So let's declare a string variable called role and here we set this to admin.
+Now to check the role of the user, we can write an if statement like this.
+If role equals admin, then perhaps we want to print, you are an admin.
+You might be wondering why we have this condition here.
+It's obvious that this condition is always true because we have set role to admin.
+But this is just for demonstration in a real program.
+We are not going to hard code this admin here.
+So we're going to read the role of the current user from somewhere else.
+We don't know what it is at the time of writing code.
+Okay, so here we have one condition.
+Let's write another condition.
+Else if role equals moderator.
+Perhaps we want to display a different message.
+So you are a moderator.
+And finally, if the role is none of these values, we want to print.
+You are a guest.
+So this is one way to implement this scenario using an if statement.
+We can also implement this using a switch statement.
+And sometimes that looks a little bit cleaner.
+Let me show you.
+So we start with a switch statement.
+Then we add parenthesis and inside this parenthesis we add are variable in this case role.
+Next, we define a block of code.
+And in this block, we add one or more case clauses.
+So we have a case for an admin.
+We add a colon here.
+Now what do we want to do here?
+If the role is admin.
+You want to print, you are an admin.
+So I'm going to copy this line from here.
+And then paste it over here.
+Now after this line, we need to add a brick statement to jump out of this switch block.
+Okay.
+Then we add another case clause.
+So case moderator.
+Once again, we add a colon.
+And here we're going to print this other message.
+So we paste it here.
+And then we're going to break.
+Now, optionally, we can have a default clause here.
+So if none of these previous cases apply, they could that be right in this section.
+We'll be executed.
+So here we want to print.
+You are a guest.
+Now here we don't need to use a brick statement.
+Because we're at the end of the switch block.
+So we'll automatically jump out of this block.
+In contrast, if we didn't use this brick statement here,
+Java will continue executing these other lines here.
+So if the role is admin, first it will execute this line.
+And then it will jump to this case block.
+It will execute this other line.
+And then after it executes this brick statement,
+it will jump out of the switch block.
+Okay.
+This is how we use a switch statement.
+Now compare this with safe statement.
+Some people prefer to use safe statements.
+Others prefer to use a switch statement.
+Now one more thing before we finish this tutorial.
+Here we're comparing the value of role with strings.
+But we could also use integers other than the long type.
+So if role was a byte, a short or an integer,
+our cases would look like this.
+Case 1, case 2, and so on.
+Now here we have a compilation error because role is a string.
+Let's change this to an integer.
+And we can initialize this to one.
+So as you can see, with switch statements,
+we can execute different code depending on the value of an expression.

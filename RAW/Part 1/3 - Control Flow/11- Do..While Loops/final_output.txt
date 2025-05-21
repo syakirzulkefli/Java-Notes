@@ -1,0 +1,22 @@
+# Study Notes for 11- Do..While Loops
+
+## Transcript
+
+In Java, we have another type of loop called a do-wire loop.
+It's very similar to a wire loop, but it gets executed at least once.
+Let me show you what I mean.
+So I'm going to rewrite the same code using a do-wire loop.
+We start with a do keyword, then we create a code block.
+At the end of this code block, we type while followed by our loop condition.
+So not input.equalsquit.
+And then we terminate this using a semicolon.
+Now inside the body of the loop, we'll simply copy all these lines we have here.
+Now compare these two types of loops.
+With wire loops, we check the condition first.
+So if the condition is false the first time, this loop will never get executed.
+In contrast, we do wire loops, we check the condition last.
+So do wire loops always get executed at least once.
+Even if the condition is false, that is the only difference.
+Now reality most of the time we use wire loops, do wire loops are rarely used, but there
+are certain cases for them.
+So just be aware of them, but most of the time, prefer to use wire loops.

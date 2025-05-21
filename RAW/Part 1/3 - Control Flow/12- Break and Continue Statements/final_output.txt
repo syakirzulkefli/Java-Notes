@@ -1,0 +1,55 @@
+# Study Notes for 12- Break and Continue Statements
+
+## Transcript
+
+We're going to continue with the example from the last tutorial.
+This program we have written has a tiny problem.
+Let me show you.
+So, I'm going to run this, enter a couple of numbers, these numbers get echo back, beautiful.
+If we type quit, the program terminates, but the word quit also gets echoed back.
+This is a bit weird.
+So, let's look at a couple of ideas for solving this problem.
+Back to our code.
+One way to solve this problem is to check the input before printing it.
+So here we can type any statement, if the input does not equal quit, then we're printed.
+So, not equal, input dot equals quit.
+If this condition is true, then we're going to print the input.
+Let's take a look.
+So, one, two, quit, beautiful.
+We solved the problem.
+Here is another way to solve this problem as well, let me show you.
+We can reverse this condition, so if the user types quit, we can immediately jump out
+of the loop using the break statement.
+So I'm going to remove the not operator.
+If the user types quit, we're going to break out of the loop.
+Otherwise, we're going to continue execution and print this input on a terminal.
+So when Java sees the break statement, it will ignore everything else after and it will
+terminate the loop.
+Let's try the program.
+Once again, we enter a couple numbers followed by quit, beautiful.
+So this is the break statement.
+We also have the continuous statement that moves control to the beginning of a loop.
+Let me show you.
+So let's imagine if the user types pass, we don't want to equal that, but also we don't
+want to terminate the loop.
+We want to ask the user to try one more time.
+So after we read the input, we can check to see if input equals pass.
+This is where we use the continuous statement.
+When Java sees this, it will move control to the beginning of the loop.
+So all these other statements are going to get ignored and what the user types is not going
+to get printed on the terminal.
+Let's run the program and see this in action.
+So we type one, two, pass, it doesn't get echoed back one more time and finally quit.
+So to recap, the break statement terminates a loop and the continuous statement moves control
+to the beginning of a loop.
+Now one last thing before it finished this tutorial.
+In this implementation, we don't really need this loop condition because the moment
+user types quit, this break statement is going to kick in and terminate the loop.
+So we can simplify this code by using a true, as our loop condition.
+So this is always true and this loop is going to get executed forever until the user types
+quit.
+This is a very common technique that you see amongst professional programmers.
+Just remember, if you're using this technique, make sure to have a break statement.
+Otherwise, you will end up with an infinite loop that executes forever.
+It never terminates and that can be very dangerous in terms of memory consumption.
+So if you're using wild true, make sure you have a break statement in your loop.

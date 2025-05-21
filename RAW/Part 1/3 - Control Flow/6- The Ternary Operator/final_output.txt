@@ -1,0 +1,43 @@
+# Study Notes for 6- The Ternary Operator
+
+## Transcript
+
+And this tutorial, we're going to look at the turnery operator in Java.
+So we're going to continue with the example from the last tutorial.
+We have this income variable.
+Imagine this is the income or customers.
+Now, depending on their income, we want to put these customers in different classes.
+If their income is more than $100,000, you want to put them in the first class.
+Otherwise, you want to put them in the economy class.
+So here's one way to implement the scenario.
+The declared string variable, class name, note that we cannot call this class because
+class is a reserved keyword.
+So class name, now, we write our first condition.
+If income is greater than $100,000, we set class name to first, otherwise, we set it to
+economy.
+Now, as you learn in the last tutorial, this code looks pretty amateurish, a professional
+programmer doesn't write code like this.
+So one way to simplify this is to give this variable an initial value.
+So we assume they are in the economy class, and then we check this condition.
+If this condition is true, we put them in the first class.
+So with this, we can get rid of this L's class.
+That is better.
+Now in the last tutorial, I showed you how to simplify this even further.
+But the technique you learned there cannot be used here.
+In other words, we cannot add income greater than $100,000 here.
+Because here we have a Boolean expression, but on the left side, we have declared a string
+variable.
+So we want to set this to a different string depending on the result of this expression.
+And this is where we use the turnery operator.
+So we start with our condition, then we type a question mark.
+If this condition is true, we add this value here.
+Otherwise, we add the other value.
+So this question mark and colon is the turnery operator in Java.
+It has three pieces.
+First, we have a condition.
+If this condition is true, this value will be returned and assigned to our class name variable.
+Otherwise, this other value will be returned.
+Now we can completely get rid of this if statement.
+So put the turnery operator in your toolbox.
+It's very helpful.
+Thanks for going to look at switch statements in Java.

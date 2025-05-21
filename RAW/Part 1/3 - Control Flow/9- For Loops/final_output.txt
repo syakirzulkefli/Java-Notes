@@ -1,0 +1,71 @@
+# Study Notes for 9- For Loops
+
+## Transcript
+
+There are times that we want to repeat one or more statements.
+For example, let's say we have this hell of world message here.
+Let's say we want to print this five times on the terminal.
+We don't want to repeat this code like this.
+This looks very ugly.
+That's where we use loops.
+In Java, we have a few different types of loops.
+The first one that I'm going to talk about in this tutorial is four loops.
+So let's see how we can use a four loop here.
+I'm going to delete on this code.
+We start by typing the four keyword followed by parenthesis.
+And inside this parenthesis, we need to do three things.
+First we need to declare a loop or a counter variable.
+So let's declare a variable called i and initialize it to zero.
+Quit often use variable names like i, j and k for loop counters.
+Next we add a semicolon to terminate the first statement.
+Then we write a Boolean expression that determines how many times this loop is going to get executed.
+So i less than five.
+As long as i is less than five, this loop would be executed.
+Once again, we add a semicolon.
+And finally we increment i by one like this.
+So this is the basic structure for a four loop.
+Now here we can repeat one or more statements using this four loop.
+So we can add our hello world message here.
+Like here we have a single statement.
+So we don't need braces.
+But if you have multiple statements that we want to repeat,
+we need to define a code block here.
+Now i'm going to remove these because we don't really need them.
+So let's run this code and see what we get.
+You get hello word printed five times on the terminal.
+Beautiful.
+Now let me explain how this code gets executed.
+When Java sees this four loop, first it will execute this statement.
+So here we are initializing i to zero.
+Then Java evaluates this condition.
+Is this condition true?
+Obviously it is because zero is less than five.
+So the control moves to line seven.
+This line gets executed.
+Now at the end of this iteration or at the end of this loop, the control moves here.
+So i is incremented by one.
+Now we are at the beginning of the second iteration.
+Once again, this condition is evaluated.
+Is one less than five obviously it is.
+So once again, the body of this loop gets executed.
+Now fast forward.
+At the end of the fifth iteration, i will become five.
+Five is not less than five.
+So the loop condition will be false and control moves outside of this four loop.
+Now here's one thing you need to remember.
+If you want to execute something five times,
+you can initialize your loop counter or loop variable to zero
+and use the less than operator here.
+Another way is to initialize this to one and then use the less than or equal to operator here.
+Now to make this more interesting, let's print i over here.
+So here we add a space and then concatenate this string with i.
+Take a look.
+So we get hello word one, two, three, four, five.
+In contrast, if we initialize i to zero and use the less than operator,
+we will get hello word zero one to three four.
+We can also print this numbers in reverse order.
+So we initialize i to five and execute this loop as long as i is greater than zero.
+But here instead of incrementing i, we decremented.
+Now we get hello word five, four, three, two, one.
+So this is all about four loops.
+Next we're going to look at why loops.

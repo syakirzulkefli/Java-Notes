@@ -1,0 +1,53 @@
+# Study Notes for 13- For-Each Loop
+
+## Transcript
+
+The last type of loop you want to look at is the 4 each loop in Java.
+We use 4 each loops to iterate over arrays or collections.
+Let me show you.
+So I'm going to start by declaring a string array called fruits.
+And we initialize this with three items.
+Let's say apple, mango, and orange.
+Now let's say we want to iterate over this array and print each item on a terminal.
+We can use any of the loops you learned about earlier, like a 4 loop or a Y loop,
+but we can also use the 4 each loop which is a bit easier.
+Let me show you.
+First I'm going to use the 4 loop to iterate over this array.
+So we type 4.
+Here we declare a loop variable or loop counter.
+Into i we set it to zero.
+As long as i is less than fruits that length,
+we're going to increment i by one after each iteration.
+And here we simply print fruits of i.
+Let's run the program and see what we get.
+So we get each item on a new line, beautiful.
+Now there is another way to write the same code using the 4 each loop.
+Here we type 4.
+In parenthesis we declare a loop variable,
+but the type of this variable should be based on the type of items in our array.
+So here we have a string array and that means every item in this array is a string.
+So here we should declare a string variable.
+We call it fruit.
+Here we type a colon and then the name of our array, fruits.
+Now in each iteration fruit will hold the value of one item in this array.
+So here we don't have to declare a numeric counter.
+We don't have to write a wooden expression like this.
+We don't have to increment our counter.
+It's much easier to iterate over an array.
+Now if we print fruit, we get the exact same result as before.
+Take a look.
+So the first three items are from our 4 loop and here's the result of our 4 each loop.
+So this is the 4 each loop.
+However, this 4 each loop has a couple of limitations.
+One limitation is that it's always forward only.
+So we cannot iterate over this array from the end to the beginning.
+In contrast, we can easily do this with a 4 loop.
+So here we can initialize i to fruits that length.
+Then we change this operator to greater that and replace this value with zero.
+So as long as i is greater than zero, we're going to decrement i.
+The second limitation of the 4 each loop is that here we don't have access to the index of each item.
+All we have is this loop variable which holds the value of each item in this array.
+In contrast, in our 4 loops, we can access both the index and the actual item.
+So i represents the index of each item and fruits of i returns the item at the given index.
+So if you need the index, then you will have to use the 4 loop.
+Otherwise, it's much easier to use the 4 each loop.
