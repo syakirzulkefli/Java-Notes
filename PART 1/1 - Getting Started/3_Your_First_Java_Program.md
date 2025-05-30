@@ -6,7 +6,7 @@
 
 3. Here on the home screen, let's create a new project.
 
-4. All right, on the left side, select Java and make sure project SDK is not black.
+4. All right, on the left side, select Java and make sure project SDK is not blank.
 
 5. So earlier we download the JDK or Java development kit version 12.
 
@@ -38,9 +38,9 @@
 
 19. So it's inside the Idea Projects folder.
 
-20. Right below that, you can see the base package, which is said to come that code with mosh on my machine.
+20. Right below that, you can see the base package, which is said to com.codewithmosh on my machine.
 
-21. On your mission is probably going to become dot package.
+21. On your machine is probably going to become (dot).package
 
 22. What is this?
 
@@ -52,17 +52,19 @@
 
 26. By the same token, we have a concept called package and we use a package to group related classes.
 
+`Packages > Classes > methods`
+
 27. So as our applications grow, we're going to end up with hundreds or even thousands of classes.
 
 28. So we should properly organize these classes into packages.
 
 29. Now, by convention, the base package for Java project is the domain name of your company in reverse.
 
-30. So my website is code with mosh.com.
+30. So my website is codewithmosh.com
 
-31. That is why I'm going to set the base package for this project to come dot code with mosh.
+31. That is why I'm going to set the base package for this project to com.codewithmosh
 
-32. Now it doesn't mean that you should have an actual domain registered on an internet.
+32. Now it doesn't mean that you should have an actual domain registered on the internet.
 
 33. This is just a way to create a name space for classes.
 
@@ -88,19 +90,19 @@
 
 44. For example, on the top, we have the hello word project inside this project.
 
-45. We have the source folder where we have the source code of a project.
+45. We have the source folder where we have the source code of the project.
 
-46. Now in this folder, we have another folder that is com dot code with mosh.
+46. Now in this folder, we have another folder that is com.codewithmosh
 
 47. That is the name of our base package.
 
 48. And in this package, we have this class, main.
 
-49. So you can see this main file opened on the right side here.
+49. So you can see this Main file opened on the right side here.
 
 50. Now look at the name of this file.
 
-51. It's main, the Java.
+51. It's Main.Java.
 
 52. So all Java files should have the Java extension.
 
@@ -120,7 +122,7 @@
 
 60. Now this package statement is terminated by semicolon.
 
-61. So in Java, wherever we have a statement, we should terminate that statement with a semicolon.
+61. So in Java, wherever we have a statement, we should terminate that statement with a semicolon `;`.
 
 62. This is exactly like C sharp or C++.
 
@@ -138,9 +140,9 @@
 
 69. We'll talk about them in the future.
 
-70. For now, just remember that the main method in your program should always be static.
+70. For now, just remember that the `main method in your program should always be static.`
 
-71. The return top of this method is void, which means this method is not going to return of value.
+71. The return type of this method is void, which means this method is not going to return any value.
 
 72. And here in parentheses, we have one parameter for this function.
 
@@ -166,21 +168,21 @@
 
 83. So capital S system.
 
-84. Here in this tooltip, you can see the system class is defined in this package, Java, the Dlang, or language.
+84. Here in this tooltip, you can see the system class is defined in this package, java.lang, package.
 
 85. Also look at this icon on the left side.
 
-86. This indicates a class.
+86. This indicates a class `C`.
 
 87. Now inside this class, we have various members.
 
 88. We can use the dot operator to see the members defined in the system class.
 
-89. Now, the member that we're going to access is out.
+89. Now, the member that we're going to access is `out`.
 
 90. Look at the icon of this member.
 
-91. It's f, which is short for field.
+91. It's `f`, which is short for `field`.
 
 92. We're going to talk about fields in the future when we talk about classes and object-oriented programming.
 
@@ -188,50 +190,50 @@
 
 94. And you can see that on the right side.
 
-95. That is print stream.
+95. That is `print stream`.
 
 96. So print stream is another class that is defined in Java.
 
 97. So once again, we use the dot operator to look at the methods or members defined in the print stream class.
 
-98. The method we're going to use is print ln, which is short for line.
+98. The method we're going to use is `println`, which is short for line.
 
 99. Look at the icon for this method.
 
-100. So m indicates a method.
+100.  So `m` indicates a `method`.
 
-101. Now, your press enter and intelligent automatically adds these parenthesis as well as a semicolon.
+101.  Now, you press enter and intelliJ automatically adds these parenthesis as well as a semicolon.
 
-102. So now with the code online six, we're calling or executing the print line method.
+102.  So now with the code on line six, we're calling or executing the print line method.
 
-103. Earlier, I told you that inside this parenthesis, we can pass values to our methods.
+103.  Earlier, I told you that inside this parenthesis, we can pass values to our methods.
 
-104. Here we want to print the hello word message on the terminal.
+104.  Here we want to print the hello word message on the terminal.
 
-105. So let's type double quotes and inside this quotes right, hello word.
+105.  So let's type double quotes and inside this quotes right, hello word.
 
-106. The hello word is textual data.
+106.  The hello word is textual data.
 
-107. In Java, whenever we deal with textual data, we should always surround them with double quotes.
+107.  In Java, whenever we deal with textual data, we should always surround them with double quotes.
 
-108. Now we say we have a string.
+108.  Now we say we have a string.
 
-109. So a string is a sequence of characters.
+109.  So a string is a sequence of characters.
 
-110. All right, so we're done with our first program.
+110.  All right, so we're done with our first program.
 
-111. Now to execute this, we can click on this icon on the toolbar.
+111.  Now to execute this, we can click on this icon on the toolbar.
 
-112. Look at the shortcut on Mac, it's control and R.
+112.  Look at the shortcut on Mac, it's control and R.
 
-113. I always prefer to use shortcuts because they're faster.
+113.  I always prefer to use shortcuts because they're faster.
 
-114. So control and R.
+114.  So `ctrl+R`.
 
-115. Now, intelligent is building our application and we can see the result in this little terminal window.
+115.  Now, intelliJ is building our application and we can see the result in this little terminal window.
 
-116. So here's our hello word message.
+116.  So here's our hello word message.
 
-117. So that was our first Java program.
+117.  So that was our first Java program.
 
-118. Next I'm going to explain how Java code gets executed under the hood.
+118.  Next I'm going to explain how Java code gets executed under the hood.

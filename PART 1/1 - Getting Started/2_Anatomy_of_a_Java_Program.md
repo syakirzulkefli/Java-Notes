@@ -16,11 +16,15 @@
 
 8. Now let's see how we can code a function in Java.
 
-9. We start by specifying the return type of that function.
+9. We start by specifying the `return type` of that function.
+
+![Alt text](/Images/img_1.png)
 
 10. Some functions return a value like a number, a date time and so on, other functions don't return anything.
 
 11. So the return type of this function is void.
+
+![Alt text](/Images/img_2.png)
 
 12. Void is a reserved keyword in Java and that's why I've coded that in blue here.
 
@@ -30,15 +34,21 @@
 
 15. This name clearly identifies the purpose of this function.
 
+![Alt text](/Images/img_3.png)
+
 16. After the name we have a pair of parentheses and inside this parentheses, we add the parameters for this function.
+
+![Alt text](/Images/img_4.png)
 
 17. We use these parameters to pass values to our function.
 
 18. For example, our send email function should have parameters like who is the receiver, what’s the subject of this email, what is the content of this email and so on.
 
-19. Now in this tutorial, we're not going to worry about parameters, but look at them in the future.
+19. Now in this tutorial, we're not going to worry about parameters, but we'll look at them in the future.
 
 20. Now after the parentheses, we add a pair of curly braces and inside this braces, we write the actual Java code.
+
+![Alt text](/Images/img_5.png)
 
 21. Now one thing I want you to pay attention to here is that in Java, we put the left brace on the same line where we define our function.
 
@@ -49,6 +59,8 @@
 24. Now every Java program should have at least one function and that function is called main.
 
 25. So main is the entry point to our programs.
+
+![Alt text](/Images/img_6.png)
 
 26. Whenever we execute a Java program, the main function gets called and the code inside this function gets executed.
 
@@ -80,9 +92,11 @@
 
 40. Now the functions that we define in between these curly braces belong to this class.
 
+![Alt text](/Images/img_7.png)
+
 41. And more accurately, we refer to them as methods.
 
-42. So a method is a function that is part of a class.
+42. So a method is a function that is part of that class.
 
 43. In some program languages like Python, we can have a function that exists outside of the class.
 
@@ -100,6 +114,8 @@
 
 50. So we put that in front of our class and method declarations.
 
+![Alt text](/Images/img_8.png)
+
 51. So this is the basic structure of a Java program.
 
 52. At a minimum, we have a main class and inside this main class, we have the main method.
@@ -107,6 +123,8 @@
 53. Now you may be curious why we have a capital M in the name of this class.
 
 54. Because in Java, we use different conventions for naming our classes and our methods.
+
+![Alt text](/Images/img_9.png)
 
 55. To name our classes, we use the Pascal naming convention.
 

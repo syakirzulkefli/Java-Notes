@@ -2,13 +2,13 @@
 
 1. In this Java tutorial, we're going to download and install the necessary tools to build Java applications.
 
-2. So open up your browser and search for JDK download.
+2. So open up your browser and search for `JDK download`.
 
 3. JDK is short for Java development kit and it's basically a software development environment for building Java applications.
 
 4. It has a compiler, it has a bunch of code that we can reuse, it has a Java runtime environment and a bunch of other stuff.
 
-5. So over here, you can see this page on Oracle.com, Java SE, which is short for Java standard edition.
+5. So over here, you can see this page on Oracle.com, `Java SE`, which is short for Java standard edition.
 
 6. Click on this.
 
@@ -38,11 +38,11 @@
 
 19. There are so many code editors for building Java applications.
 
-20. The popular ones are netbeans, eclipse, and intelligent.
+20. The popular ones are `Netbeans`, `Eclipse`, and `IntelliJ`.
 
 21. In this Java course, I'm going to use IntelliJ, but if you have a favorite editor, feel free to use that to take this course.
 
-22. That's perfect to find.
+22. That's perfectly find.
 
 23. So let's search for IntelliJ download.
 
